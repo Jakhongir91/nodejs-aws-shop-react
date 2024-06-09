@@ -1,3 +1,8 @@
+# AWS Deployed static web site
+https://rs-school-2024-aws.s3.amazonaws.com/cart
+
+
+
 # React-shop-cloudfront
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
