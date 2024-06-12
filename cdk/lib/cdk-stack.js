@@ -1,7 +1,7 @@
-const { Stack, Duration } = require('aws-cdk-lib');
-// const sqs = require('aws-cdk-lib/aws-sqs');
+const cdk = require('aws-cdk-lib');
+const s3 = require('aws-cdk-lib/aws-s3');
 
-class CdkStack extends Stack {
+class CdkStack extends cdk.Stack {
   /**
    *
    * @param {Construct} scope
@@ -13,10 +13,11 @@ class CdkStack extends Stack {
 
     // The code that defines your stack goes here
 
-    // example resource
-    // const queue = new sqs.Queue(this, 'CdkQueue', {
-    //   visibilityTimeout: Duration.seconds(300)
-    // });
+    new s3.Bucket(this, 'frontend-bucket', {
+      versioned: true,
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      autoDeleteObjects: true
+    });
   }
 }
 
