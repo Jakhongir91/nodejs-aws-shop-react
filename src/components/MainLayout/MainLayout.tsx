@@ -23,6 +23,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <>
       <Header />
       <main>
+          <h1>This is minor visible changes made by RS School Student Jakhongir Nishanbaev</h1>
         <Container sx={{ pb: 8 }} maxWidth="md">
           {children}
         </Container>

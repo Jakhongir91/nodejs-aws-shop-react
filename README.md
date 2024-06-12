@@ -1,38 +1,17 @@
-# React-shop-cloudfront
+# Task:
+    https://github.com/rolling-scopes-school/aws/blob/main/aws-developer/02_serving_spa/task.md
 
-This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
+# Whats Done: ***+70***
+    1. Made fork from Github repository
+    2. Installed dependencies and made build `npm run build`
+    3. Created AWS S3 bucket
+    4. Uploaded built files to S3 bucket, checked the app is available from Internet `+30`
+    5. Created AWS Cloud Front distribution and attached S3 to it `+40`
 
-- [Vite](https://vitejs.dev/) as a project bundler
-- [React](https://beta.reactjs.org/) as a frontend framework
-- [React-router-dom](https://reactrouterdotcom.fly.dev/) as a routing library
-- [MUI](https://mui.com/) as a UI framework
-- [React-query](https://react-query-v3.tanstack.com/) as a data fetching library
-- [Formik](https://formik.org/) as a form library
-- [Yup](https://github.com/jquense/yup) as a validation schema
-- [Vitest](https://vitest.dev/) as a test runner
-- [MSW](https://mswjs.io/) as an API mocking library
-- [Eslint](https://eslint.org/) as a code linting tool
-- [Prettier](https://prettier.io/) as a code formatting tool
-- [TypeScript](https://www.typescriptlang.org/) as a type checking tool
+# Cloud Front:
 
-## Available Scripts
+    https://d38j2r4wmu0b1l.cloudfront.net
 
-### `start`
+# S3:
 
-Starts the project in dev mode with mocked API on local environment.
-
-### `build`
-
-Builds the project for production in `dist` folder.
-
-### `preview`
-
-Starts the project in production mode on local environment.
-
-### `test`, `test:ui`, `test:coverage`
-
-Runs tests in console, in browser or with coverage.
-
-### `lint`, `prettier`
-
-Runs linting and formatting for all files in `src` folder.
+    https://rs-school-2024-aws.s3.amazonaws.com - Returns 403 Access Errror
